@@ -2,14 +2,14 @@
 
 class li{
     private $css;
-    private $conteudo;
+    private $dados;
 
-    function __construct($class, $conteudo){
+    function __construct($class, $dados){
         $this->css = $class;
-        $this->conteudo = $conteudo;
+        $this->dados = $dados;
     }
 
     function __toString(){
-        return "<li class=\"{$this->css}\">{$this->conteudo}</li>";
+        return "<li class=\"{$this->css}\">{$this->dados}</li>";
     }
 }
